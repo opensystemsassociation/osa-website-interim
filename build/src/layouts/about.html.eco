@@ -1,0 +1,8 @@
+---
+layout: default
+title: "About | Open Systems Association"
+---
+
+<h2>About</h2>
+
+            <%- @content %>

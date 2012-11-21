@@ -1,0 +1,21 @@
+---
+layout: default
+title: "Open Systems Association"
+---
+
+                <%- @content %>
+                <h2>News &amp; Events</h2>
+
+                <% for eventnews in @getFilesAtPath("events-news").toJSON(): %>
+                <article class='event-news'>
+                    <h4><%- eventnews.title %></h4>
+                    <% if eventnews.article_image: %>
+                    <img src="<%= eventnews.article_image %>" />
+                    <% end %>
+                    <p><%- eventnews.content %></p>
+                    
+                    <% if eventnews.article_url: %>
+                    <a href="<%= eventnews.article_url %>">Read more</a>
+                    <% end %>
+                </article>
+                <% end %>
