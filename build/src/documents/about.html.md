@@ -1,5 +1,7 @@
 ---
+title: 'About | Open Systems Association'
 layout: about
+aboutActive: true
 ---
 
 <p>In a world increasing formed through and by technology, it is important to explore and experiment with the flows of power which permeate peoples and things of all kinds, to apprehend, expose, understand and/or disrupt the systems we are entangled with on a daily basis.  To achieve this, we need to develop methodologies that are more playful and speculative than those now dominant in society.  Through such methods, we might grasp the agency of material things and the systems that envelop

@@ -102,6 +102,9 @@ p,a {
     margin-top: 1.5em;
     margin-bottom: 0em;
 }
+p a { 
+    font-size: inherit;
+}
 
 ul { 
     padding: 0;
@@ -159,15 +162,32 @@ h1 span {
 h1 span.last {
     margin-bottom: 1.2857em;
 }
-h1 a, h1 a:link, h1 a:visited { text-decoration: none; color: #555 }
+h1 a, h1 a:link, h1 a:visited { text-decoration: none; color: #858585; }
 
 h2,h3,h4,h5 {
     font-weight: normal;
 }
 
+small {
+    font-size: 0.625em; /* 10px */
+    line-height: 1.8em; /* 18px */
+    margin-top: 1.8em;
+    margin-bottom: 0em;
+}
+
+.date {
+    font-size: 0.625em; /* 10px */
+    line-height: 1.8em; /* 18px */
+    margin-bottom: 1.8em;
+    margin-top: 0em;
+}
 /*==============================================
  * Navigation
  * ============================================*/
+.osa a:hover, .home .osa a {
+    color:#434343;
+}
+
 .nav-global li {
     display: inline-block;
 }
@@ -179,11 +199,31 @@ h2,h3,h4,h5 {
 }
 .nav-global li a {
     text-decoration: none;
-    color: #434343;
+    color: #858585;
     font-size: 0.875em; /* 14px */
     line-height: 1.2857em; /* 18px */
     margin-top: 1.2857em;
     margin-bottom: 0em;
+}
+.nav-global li a:hover,
+.nav-global li.active a {
+    color: #434343;
+}
+/*
+.home .osa a:hover,
+.home .nav-global li a {
+    color: #434343;
+}
+.home .nav-global li a:hover {
+    color: #858585;
+}
+*/
+.csstransitions .osa a, .csstransitions .nav-global li a {
+    -webkit-transition: color 400ms ease-out;
+        -moz-transition: color 400ms ease-out;
+            -ms-transition: color 400ms ease-out;
+                -o-transition: color 400ms ease-out;
+                    transition: color 400ms ease-out;
 }
 
 .nav-global ul { 
@@ -193,18 +233,10 @@ h2,h3,h4,h5 {
     margin-bottom: 0em;
 }
 
-/*
-.wrapper .content:before {
-    content: '';
-    position: absolute;
-    border-left: 1px dashed #BBB;
-    width: 27px;
-    min-height: 468px;
-    top: 0px;
-    left: -10px;
+.wrapper .current-projects {
+    padding-bottom: 1.0625em;
+    border-bottom: 1px dashed #434343;
 }
-*/
-
 .wrapper .current-project iframe {
     margin-top: 1em;
     width: 100%;
@@ -230,7 +262,7 @@ h2,h3,h4,h5 {
 }
 
 .event-news{
-    border-top: 1px solid #555;
+    border-top: 1px dashed #555;
     width: 300px;
     padding-bottom: 1.125em;
 }
@@ -259,7 +291,7 @@ h2,h3,h4,h5 {
 @media only screen and (min-width: 768px) {
 
 /* ====================
-    WIDE: CSS3 Effects
+     WIDE: CSS3 Effects
    ==================== */
 
     .header-container,
@@ -285,12 +317,16 @@ h2,h3,h4,h5 {
     font-size: 2em;
     left: -10px;
 }
-.nav-global li.active a:after {
-    content: '>';
-    position: absolute;
-    font-size: 2em;
-    left: 10px;
+/*
+.nav-global li.active a:before {
+    margin-left: 10px;
 }
+.nav-global li.active a:before {
+    left: 0px;
+    right: -10px;
+}
+*/
+
 /* ============
     WIDE: Main
    ============ */

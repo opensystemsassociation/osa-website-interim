@@ -5,12 +5,11 @@ title: "Projects | Open Systems Association"
                 <h2>Projects</h2>
                 <!-- <p><%- @content %></p> -->
 
-                <h3><%= @document.current_title %></h3>
                 <p><%- @document.current_intro %></p>
                 <div class='current-projects'>
-                    <% for current in @getFilesAtPath("current-project").toJSON(): %>
+                    <% for current in @getFilesAtPath("projects-current/").toJSON(): %>
                     <article class="current-project">
-                        <h4><%= current.title %></h4>
+                        <h3><%= current.title %></h3>
                         <% if current.project_image: %>
                         <img class="current" src="<%= current.project_image %>" />
                         <% end %>
@@ -22,12 +21,11 @@ title: "Projects | Open Systems Association"
                     </article>
                     <% end %>
                 </div>
-                <h3><%= @document.other_title %></h4>
                 <p><%= @document.other_intro %></p>
                 <div class='other-projects'>
-                    <% for project in @getFilesAtPath("projects/").toJSON(): %>
+                    <% for project in @getFilesAtPath("projects-previous/").toJSON(): %>
                     <article class="previous-project grid_18">
-                        <h4><%= project.title %></h4>
+                        <h3><%= project.title %></h3>
                         <img class="previous" src="<%= project.project_image %>" />
                         <p><%- project.content %></p>
                         <a href="<%= project.project_url %>">Read more</a>

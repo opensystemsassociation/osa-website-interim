@@ -1,14 +1,15 @@
 ---
 layout: default
-title: "Open Systems Association"
+title: "Home | Open Systems Association"
 ---
 
                 <%- @content %>
                 <h2>News &amp; Events</h2>
 
-                <% for eventnews in @getFilesAtPath("events-news").toJSON(): %>
+                <% for eventnews in @getFilesAtPath("events-news",{date:-1},1).toJSON(): %>
                 <article class='event-news'>
-                    <h4><%- eventnews.title %></h4>
+                <h4><%- eventnews.title %></h4>
+                <div class='date'><%- eventnews.type %> // <%- eventnews.date.toDateString() %></div>
                     <% if eventnews.article_image: %>
                     <img src="<%= eventnews.article_image %>" />
                     <% end %>
