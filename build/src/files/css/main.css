@@ -250,6 +250,14 @@ small {
     margin: 0 2% 0 0;
     width: 100%;
 }
+.previous-project .description {
+    min-height: 162px;
+}
+.previous-project .author {
+    font-size: 0.75em; /* 12px */
+    line-height: 1.5em; /* 18px */
+    margin-bottom: 0em;
+}
 
 .content img.current {
     max-width: 682px;

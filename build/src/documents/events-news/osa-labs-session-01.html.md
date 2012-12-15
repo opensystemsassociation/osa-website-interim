@@ -1,9 +1,9 @@
 ---
-title: "First OSA + MA:IM *lab* session"
-article_url: "http://www.fsf.org/"
+title: "MA Interactive Media Events programme"
+article_url: ""
 type: Event
-date: 2012-01-20
+date: 2013-01
 ---
 
-This is the first OSA event and first lab session  with MA:IM students.
+Early in 2013 OSA will be involved in a series of events in collaboration with the MA Interactive Media: Critical Theory &amp; Production course at Goldsmiths College, London. More information will be announced here shortly.
 

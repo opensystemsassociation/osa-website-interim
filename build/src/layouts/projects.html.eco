@@ -17,7 +17,9 @@ title: "Projects | Open Systems Association"
                         <iframe src="http://player.vimeo.com/video/<%= current.vimeo_id%>"  frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> 
                         <% end %>
                         <p><%- current.content %></p>
+                        <% if current.project_url: %>
                         <a href="<%= current.project_url %>">Read more</a>
+                        <% end %>
                     </article>
                     <% end %>
                 </div>
@@ -25,10 +27,13 @@ title: "Projects | Open Systems Association"
                 <div class='other-projects'>
                     <% for project in @getFilesAtPath("projects-previous/").toJSON(): %>
                     <article class="previous-project grid_18">
-                        <h3><%= project.title %></h3>
+                        <h3><%= project.title %></h4>
+                        <div  class='author'><%- project.author %></div>
                         <img class="previous" src="<%= project.project_image %>" />
-                        <p><%- project.content %></p>
+                        <p class='description'><%- project.content %></p>
+                        <% if project.project_url: %>
                         <a href="<%= project.project_url %>">Read more</a>
+                        <% end %>
                     </article>
                     <% end %>
                 </div>
