@@ -1,3 +1,10 @@
+"""
+    Dependencies:
+        paramiko [$ pip install paramiko]
+        GitPython [$ easy_install GitPython]
+        A previous setup and configured docpage project - https://github.com/bevry/docpad
+"""
+
 import commands
 import os
 import time
@@ -64,14 +71,14 @@ if __name__ == '__main__':
     transport = ssh.get_transport()
     sftp = paramiko.SFTPClient.from_transport(transport)
 
-    # Traverse tree of files and check for modified date.
+    # Traverse tree of files
     compiledpath = buildpath + 'out/'
     for f in getInfos(compiledpath):
         print 'Putting ' + f + ' to remote location ' + remotepath + f.replace(compiledpath, '')
         try:
             sftp.put(f, remotepath + f.replace(compiledpath, ''))
         except IOError as e:
-            print 'Failed to put to :' + remotepath + f.replace(compiledpath, '') + "[I/O error({0}): {1}".format(e.errno, e.strerror) + ']'
+            print 'Failed to put to :' + remotepath + f.replace(compiledpath, '') + "- [I/O error({0}): {1}".format(e.errno, e.strerror) + ']'
 
     sftp.close()
     ssh.close()
