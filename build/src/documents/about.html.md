@@ -11,4 +11,3 @@ aboutActive: true
 <p>For the OSA, these technologies and systems are not limited to smart phones, software, or chips and pins, but extend into the ecologies and situations we face everyday such as sunlight, mothers in parks, medical practices, food, etc. Everywhere we go we see the possibilities of systems to explore.</p>
 
 <p>OSA is currently based out of the Centre for Cultural Studies at Goldsmiths College, University of London.  It stemmed out of the MA Interactive Media: Critical Theory and Practice, from which many of its members graduated, and still continues to have close ties with the course. </p>
-<b>test</b>
