@@ -14,7 +14,7 @@ title: "Home | Open Systems Association"
                     <img src="<%= eventnews.article_image %>" />
                     <% end %>
                     <p><%- eventnews.content %></p>
-                    
+
                     <% if eventnews.article_url: %>
                     <a href="<%= eventnews.article_url %>">Read more</a>
                     <% end %>

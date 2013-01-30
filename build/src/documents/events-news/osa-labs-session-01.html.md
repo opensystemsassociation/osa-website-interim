@@ -1,7 +1,7 @@
 ---
 title: "MA Interactive Media Events programme"
 article_url: ""
-type: Event
+type: NEWS
 date: 2013-01
 ---
 

@@ -2,14 +2,14 @@
 layout: default
 title: "Projects | Open Systems Association"
 ---
-                <h2>Projects</h2>
+                <h3>Current Projects</h3>
                 <!-- <p><%- @content %></p> -->
 
                 <p><%- @document.current_intro %></p>
                 <div class='current-projects'>
                     <% for current in @getFilesAtPath("projects-current/").toJSON(): %>
                     <article class="current-project">
-                        <h3><%= current.title %></h3>
+                        <h4><%= current.title %></h4>
                         <% if current.project_image: %>
                         <img class="current" src="<%= current.project_image %>" />
                         <% end %>
@@ -18,16 +18,17 @@ title: "Projects | Open Systems Association"
                         <% end %>
                         <p><%- current.content %></p>
                         <% if current.project_url: %>
-                        <a href="<%= current.project_url %>">Read more</a>
+                        <a class='project' href="<%= current.project_url %>">Visit project »</a>
                         <% end %>
                     </article>
                     <% end %>
                 </div>
+                <h3>Previous Projects by OSA members</h3>
                 <p><%= @document.other_intro %></p>
                 <div class='other-projects'>
                     <% for project in @getFilesAtPath("projects-previous/").toJSON(): %>
                     <article class="previous-project grid_18">
-                        <h3><%= project.title %></h4>
+                        <h4><%= project.title %></h4>
                         <div  class='author'><%- project.author %></div>
                         <img class="previous" src="<%= project.project_image %>" />
                         <p class='description'><%- project.content %></p>
