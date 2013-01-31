@@ -3,7 +3,7 @@ layout: default
 title: "Home | Open Systems Association"
 ---
 
-                <%- @content %>
+<!--                <%- @content %> -->
                 <h2>News &amp; Events</h2>
 
                 <% for eventnews in @getFilesAtPath("events-news",{date:-1},1).toJSON(): %>

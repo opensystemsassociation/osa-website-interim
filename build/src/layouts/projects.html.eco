@@ -2,7 +2,7 @@
 layout: default
 title: "Projects | Open Systems Association"
 ---
-                <h3>Current Projects</h3>
+                <h2>Current Projects</h2>
                 <!-- <p><%- @content %></p> -->
 
                 <p><%- @document.current_intro %></p>
@@ -23,10 +23,10 @@ title: "Projects | Open Systems Association"
                     </article>
                     <% end %>
                 </div>
-                <h3>Previous Projects by OSA members</h3>
+                <h2>Previous Projects by OSA members</h2>
                 <p><%= @document.other_intro %></p>
                 <div class='other-projects'>
-                    <% for project in @getFilesAtPath("projects-previous/").toJSON(): %>
+                    <% for project in @getFilesAtPath("projects-previous/", {title:1},1).toJSON(): %>
                     <article class="previous-project grid_18">
                         <h4><%= project.title %></h4>
                         <div  class='author'><%- project.author %></div>

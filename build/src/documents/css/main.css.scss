@@ -105,13 +105,17 @@ textarea {
 /*==============================================
  * Generic styles
  * ============================================*/
-
-p,a { 
+@mixin para {
     font-size: 0.75em; /* 12px */
     line-height: 1.5em; /* 18px */
+}
+
+p,a { 
+    @include para;
     margin-top: 1.5em;
     margin-bottom: 0em;
 }
+
 p a { 
     font-size: inherit;
 }
@@ -349,6 +353,18 @@ a.project:hover {
 .event-news{
     border-top: 1px dashed #555;
     padding-bottom: 1.125em;
+}
+
+.members {
+    list-style: none;
+}
+
+.members > * {
+    @include para;
+}
+
+.members > * a {
+    font-size: inherit;
 }
 
 /*==============================================

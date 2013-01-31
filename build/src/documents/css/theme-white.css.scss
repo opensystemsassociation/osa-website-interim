@@ -1,10 +1,10 @@
 $coverColour:#000000; 
-$opacity: 0.6;
-$clrBody: #D5D0D0;
+$opacity: 0.7;
+$clrBody: #EEE9E9;
 $clrLink: #ACA1A1;
 $clrLinkOver: #FFFFFF;
 $clrNavLink: #858585;
-$clrNavLinkOver: #D5D0D0;
+$clrNavLinkOver: #EEE9E9;
 body {
     color: $clrBody;
 }
@@ -32,6 +32,9 @@ h2,h3,h4{
 
 .event-news {
     border-top-color: $clrNavLink;
+}
+.members a {
+    color: $clrLinkOver;
 }
 
 .fullbg-cover {

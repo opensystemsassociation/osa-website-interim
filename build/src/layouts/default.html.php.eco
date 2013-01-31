@@ -40,6 +40,8 @@
             $images = array('content/olga-sundial.jpg',
                 'content/olga-lightscape.jpg',
                 'content/gareth-twitterbot.jpg',
+                'content/cliff-arduino.jpg',
+                'content/cliff-absurd.jpg',
                 'content/anila-power.jpg');
             $randInt = rand(0, count($images)-1);
             $i = -1;
@@ -51,13 +53,19 @@
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-        <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-            s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38129111-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+             var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+             ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+             })();
+
+         </script> 
     <%- @getBlock('scripts').add(["js/main.js"]).toHTML() %>
     </body>
 </html>
