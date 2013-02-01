@@ -42,6 +42,7 @@
                 'content/gareth-twitterbot.jpg',
                 'content/cliff-arduino.jpg',
                 'content/cliff-absurd.jpg',
+                'content/renee-eaves.jpg',
                 'content/anila-power.jpg');
             $randInt = rand(0, count($images)-1);
             $i = -1;
