@@ -9,7 +9,7 @@ title: "Projects | Open Systems Association"
                 <div class='current-projects'>
                     <% for current in @getFilesAtPath("projects-current/").toJSON(): %>
                     <article class="current-project">
-                        <h4><%= current.title %></h4>
+                        <h3><%= current.title %></h3>
                         <% if current.project_image: %>
                         <img class="current" src="<%= current.project_image %>" />
                         <% end %>
@@ -23,12 +23,12 @@ title: "Projects | Open Systems Association"
                     </article>
                     <% end %>
                 </div>
-                <h2>Previous Projects by OSA members</h2>
+                <h2>Projects by OSA members</h2>
                 <p><%= @document.other_intro %></p>
                 <div class='other-projects'>
                     <% for project in @getFilesAtPath("projects-previous/", {title:1},1).toJSON(): %>
                     <article class="previous-project grid_18">
-                        <h4><%= project.title %></h4>
+                        <h3><%= project.title %></h3>
                         <div  class='author'><%- project.author %></div>
                         <img class="previous" src="<%= project.project_image %>" />
                         <p class='description'><%- project.content %></p>
