@@ -9,8 +9,8 @@ date: 2013-06-21
 
 <p>Engineered, commodified and consumed, kitchen time becomes labour time sold as leisure. By probing the powers underlying domestic drudgery, sociable seasons and cruel technologies, could we make it something different?</p>
 
-<p>Opening Event:Friday 21 June 2013 6-9PM<br/>
-Open:Saturday 22 and Sunday 23 June 2012<br/><p/>
+<p>Opening Event: Friday 21 June 2013 6-9PM<br/>
+Open: Saturday 22 and Sunday 23 June 2012<br/><p/>
 
 <p>Harts Lane Studios, 17 Harts Lane, New Cross Gate
 London SE14 5UP, <a href="https://maps.google.co.uk/maps?q=SE14+5UP,+London&hnear=Londres+SE14+5UP,+Reino+Unido&gl=uk&t=m&z=16">Map</a></p>
