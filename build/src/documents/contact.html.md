@@ -19,7 +19,7 @@ If you would like to find out more about the approach of the Open Systems Associ
     <li>Emilie Giles</li>
     <li><a href="http://garethfoote.co.uk">Gareth Foote</a></li>
     <li><a href="http://www.loesbogers.com">Loes Bogers</a></li>
-    <li>Manali Jagtap-Nyheim</li>
+    <li><a href="http://www.manalijagtap.com">Manali Jagtap-Nyheim</a></li>
     <li>Niklas Petzke</li>
     <li><a href="http://www.olgapanades.com">Olga Panades</a></li>
     <li><a href="http://renee-carmichael.com">Renee Carmichael</a></li>
